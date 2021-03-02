@@ -48,7 +48,7 @@ public class Principal {
 			 menu();
 			 break;
 		default:
-			 System.out.println("Opção iválida! Digite de 0 a 2. \n");
+			 System.out.println("Opção inválida! Digite de 0 a 3. \n");
 			 System.out.println("\n");
 			 menu();
 		 }
