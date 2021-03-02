@@ -37,7 +37,7 @@ public class ProcessController {
 		}
 		
 		if (os.contains("Linux")) {
-			String cmd = "PS -AUX";
+			String cmd = "ps -aux";
 			try {
 				Process p = Runtime.getRuntime().exec(cmd);
 				InputStream flow = p.getInputStream();
@@ -72,7 +72,7 @@ public class ProcessController {
 		
 		if (os.contains("Linux")) {
 			StringBuffer cmd = new StringBuffer();
-			cmd.append("KILL -9");
+			cmd.append("kill -9");
 			cmd.append(" ");
 			cmd.append(pid);
 			try {
@@ -98,7 +98,7 @@ public class ProcessController {
 		
 		if (os.contains("Linux")) {
 			StringBuffer cmd = new StringBuffer();
-			cmd.append("PKILL");
+			cmd.append("pkill");
 			cmd.append(" ");
 			cmd.append(name);
 			try {
